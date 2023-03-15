@@ -1,0 +1,12 @@
+/* змінні плейсхолдер */
+
+:root{
+    --color-font: #F7F7F7;
+    --black: #000000;
+    --color-light: #f6f6f6;
+    --color-menu-light: #F7F7F7;
+    --color-menu-light-second: #D8D7D7;
+    --color-menu-dark: rgba(216, 215, 215, 0.5);
+    --color-dark:  #121212;
+    --font-family: 'DM Sans', sans-serif;
+}

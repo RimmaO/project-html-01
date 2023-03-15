@@ -1,0 +1,282 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+  border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
+
+  background-color: var(--color-dark);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  z-index: 3;
+}
+
+@media screen and (max-width: 1439px) {
+  .header-nav {
+    display: none;
+  }
+}
+
+.header-list {
+  display: flex;
+  gap: 32px;
+}
+.header-link {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 0.05em;
+
+  color: var(--color-light);
+}
+
+.header-link-soc {
+  fill: transparent;
+  stroke: var(--color-light);
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1440px) {
+  .header-container {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+  .mobile-menu-open {
+    display: none;
+  }
+  .current {
+    position: relative;
+  }
+  .current::after {
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 22px;
+    background-color: var(--color-light);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-list-soc {
+    display: none;
+  }
+  .mobile-menu-open {
+    margin-right: 83px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-list-soc {
+    display: flex;
+    gap: 14px;
+  }
+}
+
+.mobile-menu-open {
+  padding: 0;
+
+  line-height: 0;
+  background-color: transparent;
+  border: none;
+  stroke: var(--color-light);
+}
+.mobile-menu-close-btn {
+  stroke: var(--color-light);
+}
+.header-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.18em;
+
+  color: var(--color-light);
+}
+
+.header-logo-desc {
+  font-size: 6px;
+  line-height: 1.33;
+  letter-spacing: 0.18em;
+
+  color: #d8d7d7;
+}
+
+.header-logo-mob {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.18em;
+
+  color: var(--color-light);
+}
+
+.header-logo-desc-mob {
+  font-size: 6px;
+  line-height: 1.33;
+  letter-spacing: 0.18em;
+
+  color: #d8d7d7;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--color-dark);
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .mobile-menu-open-icon {
+    display: block;
+    width: 24px;
+    height: 16px;
+  }
+
+  .mobile-menu-close-icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu-soc-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+}
+.js-menu-container {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(-350%, -50%);
+}
+.js-menu-container.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
+  transform: translate(0%, 0%);
+}
+
+.mobile-menu-container {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+}
+
+.header-mobile-menu {
+  padding-bottom: 20px;
+  border-bottom: 0.5px solid #f6f6f633;
+}
+
+.mobile-menu-close-btn {
+  position: absolute;
+  top: 32px;
+  left: 27px;
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+  color: var(--color-light);
+  fill: currentColor;
+}
+.mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin-top: 128px;
+}
+
+.mobile-menu-link {
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.05em;
+
+  color: var(--color-light);
+}
+
+.mobile-menu-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2000;
+  background-color: var(--color-light);
+  will-change: transform;
+  transition: 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate3d(0px, 100%, 0px);
+  overflow: hidden;
+}
+.hover-text {
+  display: block;
+  color: var(--color-dark);
+  will-change: transform;
+  transition: 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate3d(0px, -100%, 0px);
+}
+.mobile-menu-link:hover .hover,
+.mobile-menu-link:hover .hover-text {
+  transform: translate3d(0px, 0%, 0px);
+}
+
+.mobile-menu-soc {
+  display: flex;
+  gap: 14px;
+  margin-top: auto;
+}
+.mobile-menu-soc-link {
+  stroke: var(--color-light);
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu-soc {
+    position: absolute;
+    top: 27px;
+    right: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header-link-soc:is(:hover, :focus) {
+    stroke: var(--color-dark);
+  }
+}

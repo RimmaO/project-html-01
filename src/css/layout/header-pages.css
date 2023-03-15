@@ -1,0 +1,31 @@
+.header {
+  background-color: #ffffff;
+}
+
+.header-link {
+  color: var(--color-dark);
+}
+
+.header-link-soc {
+  fill: #ffffff;
+  stroke: var(--color-dark);
+}
+
+@media screen and (min-width: 1440px) {
+  .current::after {
+    background-color: var(--color-dark);
+  }
+}
+
+.mobile-menu-open {
+  stroke: var(--color-dark);
+}
+.header-list-soc {
+  stroke: var(--color-dark);
+}
+.header-logo {
+  color: var(--color-dark);
+}
+.header-logo-desc {
+  color: var(--color-dark);
+}

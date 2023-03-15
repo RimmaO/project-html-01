@@ -1,0 +1,112 @@
+
+@media screen and (min-width: 1440px) {
+
+    .restaurant-details > .container {
+        width: 1440px;
+        margin-top: 0;
+        padding-top: 44px;
+        padding-right: 32px;
+        padding-left: 32px;
+        padding-bottom: 26px;
+    }
+
+    .restaurant-details-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .restaurant-details-btn-wrap {
+        display: flex;
+        gap: 14px;
+    }
+
+    .restaurant-details-btn {
+        width: 167px;
+        height: 42px;
+    }
+
+    .restaurant-details-btn-text {
+        font-size: 18px;
+        line-height: 1.33;
+    }
+
+    .restaurant-details-list {
+        position: relative;
+    }
+
+    .restaurant-details-list-wrap {
+        display: flex;
+        gap: 32px;
+    }
+
+    .restaurant-details-list-item {
+        width: calc((100% - 32px) / 2);
+    }
+
+    .restaurant-details-list-item-desk:not(:last-child) {
+        margin-right: 32px;
+    }
+
+    .restaurant-details-list-item:nth-child(-n + 1) {
+        margin-right: 32px;
+    }
+
+    /* .restaurant-details-desk-pic, .restaurant-details-pic {
+        width: 266px;
+    } */
+
+    .restaurant-details-desk-pic {
+        display: block;
+        width: 266px;
+    }
+
+    .restaurant-details-icons {
+        margin-top: 51px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .restaurant-details-btn-low-wrap {
+        display: none;
+    }
+
+    .slider-img {
+        width: 266px;
+    }
+
+    .slider-img-desk {
+        display: block;
+        width: 266px;
+        margin-right: 32px;
+    }
+
+    .slider-img:not(:last-child) {
+        margin-right: 32px;
+    }
+
+    .next {
+        position: absolute;
+        top: 350px;
+        right: 660px;
+        height: 14px;
+        width: 7px;
+        z-index: 1;
+        cursor: pointer;
+        stroke: var(--color-dark);
+        fill: transparent;
+    }
+
+    .prev {
+        position: absolute;
+        top: 350px;
+        left: 660px;
+        height: 14px;
+        width: 7px;
+        z-index: 1;
+        cursor: pointer;
+        stroke: var(--color-dark);
+        fill: transparent;
+        transform: rotate(-180deg);
+    }
+}
+

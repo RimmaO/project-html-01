@@ -1,0 +1,7 @@
+body {
+    margin: 0;
+    background-color: var(--color-font);
+    color: var(--color-dark);
+    font-size: 14px;
+    font-family: var(--font-family);
+}

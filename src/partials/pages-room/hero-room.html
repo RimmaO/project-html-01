@@ -1,0 +1,226 @@
+<!-- DOUBLE LUXURY ROOM -->
+<section class="double-room-hero">
+  <div class="double-room-container container">
+    <div class="hero-room-container">
+      <!-- ЗАГОЛОВОК СТОРІНКИ DOUBLE LUXURY ROOM -->
+      <h1 class="room-hero-title">
+        Double <span class="word-hotel">luxury</span> room
+      </h1>
+
+      <!-- Кнопка “View prices” відкриватиме модальне вікно Prices per Room Modal window -->
+      <button
+        type="button"
+        class="room-prices-btn js-open-modal"
+        data-modal="modal-price"
+      >
+        View prices
+      </button>
+    </div>
+    <div class="hero-room-slider">
+      <!-- Слайдер з контентними зображеннями готелю -->
+      <ul class="hero-room-list">
+        <li class="hero-room-item">
+          <!-- First photo -->
+          <picture>
+            <source
+              srcset="
+                ../img/page-room/hero-room/desktop/hero-room-1-1x.jpg 1x,
+                ../img/page-room/hero-room/desktop/hero-room-1-2x.jpg 2x
+              "
+              media="(min-width:1440px)"
+            />
+            <source
+              srcset="
+                ../img/page-room/hero-room//tablet/tab-hero-room-1-1x.jpg 1x,
+                ../img/page-room/hero-room/tablet/tab-hero-room-1-2x.jpg  2x
+              "
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="
+                ../img/page-room/hero-room/mobile/mob-hero-room-1-1x.jpg 1x,
+                ../img/page-room/hero-room/mobile/mob-hero-room-1-2x.jpg 2x
+              "
+              media="(max-width:767px)"
+            />
+            <img
+              src="../img/page-room/hero-room/mobile/mob-hero-room-1-1x.jpg"
+              alt="bedroom"
+            />
+          </picture>
+        </li>
+        <li class="hero-room-item">
+          <picture>
+            <source
+              srcset="
+                ../img/page-room/hero-room/desktop/hero-room-2-2-1x.jpg 1x,
+                ../img/page-room/hero-room/desktop/hero-room-2-2-2x.jpg 2x
+              "
+              media="(min-width:1440px)"
+            />
+            <source
+              srcset="
+                ../img/page-room/hero-room/tablet/tab-hero-room-2-2-1x.jpg 1x,
+                ../img/page-room/hero-room/tablet/tab-hero-room-2-2-2x.jpg 2x
+              "
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="
+                ../img/page-room/hero-room/mobile/mob-hero-room-2-2-1x.jpg 1x,
+                ../img/page-room/hero-room/mobile/mob-hero-room-2-2-2x.jpg 2x
+              "
+              media="(max-width:767px)"
+            />
+            <img
+              src="../img/page-room/hero-room/mobile/mob-hero-room-2-1x.jpg"
+              alt="kitchen"
+            />
+          </picture>
+        </li>
+        <!-- <li class="hero-room-item">
+                    <picture>
+                        <source 
+                            srcset="
+                                ../../img/page-room/hero-room/desktop/hero-room-3-1x.jpg   1x, 
+                                ../../img/page-room/hero-room/desktop/hero-room-3-2x.jpg   2x
+                            " 
+                            media="(min-width:1440px)"
+                        >
+                        <source 
+                            srcset="
+                                ../../img/page-room/hero-room/tablet/tab-hero-room-3-1x.jpg   1x, 
+                                ../../img/page-room/hero-room/tablet/tab-hero-room-3-2x.jpg   2x
+                            " 
+                            media="(min-width:768px)"
+                        >
+                        <source 
+                            srcset="
+                                ../../img/page-room/hero-room/mobile/mob-hero-room-2-1x.jpg   1x, 
+                                ../../img/page-room/hero-room/mobile/mob-hero-room-3-2x.jpg   2x
+                            " 
+                            media="(max-width:767px)"
+                        >
+                        <img 
+                            src="../../img/page-room/hero-room/mobile/mob-hero-room-3-1x.jpg" 
+                            alt="living room"
+                        >
+                    </picture>
+                </li>
+                <li class="hero-room-item">
+                    <picture>
+                        <source 
+                            srcset="
+                                ../../img/page-room/hero-room/desktop/hero-room-4-1x.jpg   1x, 
+                                ../../img/page-room/hero-room/desktop/hero-room-4-2x.jpg   2x
+                            " 
+                            media="(min-width:1440px)"
+                        >
+                        <source 
+                            srcset="
+                                ../../img/page-room/hero-room/tablet/tab-hero-room-4-1x.jpg   1x, 
+                                ../../img/page-room/hero-room/tablet/tab-hero-room-4-2x.jpg   2x
+                            " 
+                            media="(min-width:768px)"
+                        >
+                        <source 
+                            srcset="
+                                ../../img/page-room/hero-room/mobile/mob-hero-room-4-1x.jpg   1x, 
+                                ../../img/page-room/hero-room/mobile/mob-hero-room-4-2x.jpg   2x
+                            " 
+                            media="(max-width:767px)"
+                        >
+                        <img 
+                            src="../../img/page-room/hero-room/mobile/mob-hero-room-4-1x.jpg" 
+                            alt="bathroom"
+                        >
+                    </picture>
+                </li>
+                <li class="hero-room-item">
+                    <picture>
+                        <source 
+                            srcset="
+                                ../../img/page-room/hero-room/desktop/hero-room-5-1x.jpg   1x, 
+                                ../../img/page-room/hero-room/desktop/hero-room-5-2x.jpg   2x
+                            " 
+                            media="(min-width:1440px)"
+                        >
+                        <source 
+                            srcset="
+                                ../../img/page-room/hero-room/tablet/tab-hero-room-5-1x.jpg   1x, 
+                                ../../img/page-room/hero-room/tablet/tab-hero-room-5-2x.jpg   2x
+                            " 
+                            media="(min-width:768px)"
+                        >
+                        <source 
+                            srcset="
+                                ../../img/page-room/hero-room/mobile/mob-hero-room-5-1x.jpg   1x, 
+                                ../../img/page-room/hero-room/mobile/mob-hero-room-5-2x.jpg   2x
+                            " 
+                            media="(max-width:767px)"
+                        >
+                        <img 
+                            src="../../img/page-room/hero-room/mobile/mob-hero-room-5-1x.jpg" 
+                            alt="dressing room"
+                        >
+                    </picture>
+                </li>
+                <li class="hero-room-item">
+                    <picture>
+                        <source 
+                            srcset="
+                                ../../img/page-room/hero-room/desktop/hero-room-6-1x.jpg   1x, 
+                                ../../img/page-room/hero-room/desktop/hero-room-6-2x.jpg   2x
+                            " 
+                            media="(min-width:1440px)"
+                        >
+                        <source 
+                            srcset="
+                                ../../img/page-room/hero-room/tablet/tab-hero-room-6-1x.jpg   1x, 
+                                ../../img/page-room/hero-room/tablet/tab-hero-room-6-2x.jpg   2x
+                            " 
+                            media="(min-width:768px)"
+                        >
+                        <source 
+                            srcset="
+                                ../../img/page-room/hero-room/mobile/mob-hero-room-6-1x.jpg   1x, 
+                                ../../img/page-room/hero-room/mobile/mob-hero-room-6-2x.jpg   2x
+                            " 
+                            media="(max-width:767px)"
+                        >
+                        <img 
+                            src="../../img/page-room/hero-room/mobile/mob-hero-room-6-1x.jpg" 
+                            alt="shower"
+                        >
+                    </picture>
+                </li> -->
+      </ul>
+    </div>
+  </div>
+
+  <div class="hero-room-end container">
+    <div class="sliker">
+      <ul class="sliker-icon-list">
+        <li class="sliker-icon-item">
+          1
+          <svg class="sliker-icon-b" width="5" height="10">
+            <use href="../img/icons/sprite.svg#icon-vector"></use>
+          </svg>
+        </li>
+        <li class="sliker-icon-item">
+          2
+          <svg class="sliker-icon" width="5" height="10">
+            <use href="../img/icons/sprite.svg#icon-vector"></use>
+          </svg>
+        </li>
+      </ul>
+    </div>
+    <div class="hero-room-tagline">
+      <!-- Підзаголовок секції -->
+      <p class="hero-double-tagline">
+        The Mimino hotel features spacious and stylish double luxury rooms with
+        modern amenities for a comfortable stay.
+      </p>
+    </div>
+  </div>
+</section>
